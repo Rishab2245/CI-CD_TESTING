@@ -24,7 +24,7 @@ app.post("/senddata", (req, res) => {
     console.log("logging the request body\n", req.body);
     res.send("Post request has been successfully sent");
 })
-app.post("/home", (req, res) => {
+app.get("/home", (req, res) => {
     console.log("logging the request body\n", req.body);
     res.send("Welcome to home");
 })
