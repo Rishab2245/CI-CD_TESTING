@@ -38,7 +38,7 @@ jobs:
         
         # SSH into EC2 and deploy changes
         ssh -o StrictHostKeyChecking=no ubuntu@$EC2_HOST << 'EOF'
-          cd /path/to/your/application || exit
+          cd CI-CD_TESTING/ || exit
           git pull origin master  # Ensure you are pulling from the correct branch
           npm install              # Install any new dependencies
           pm2 restart server.js    # Restart your application
