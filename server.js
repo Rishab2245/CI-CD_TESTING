@@ -24,6 +24,10 @@ app.post("/senddata", (req, res) => {
     console.log("logging the request body\n", req.body);
     res.send("Post request has been successfully sent");
 })
+app.post("/home", (req, res) => {
+    console.log("logging the request body\n", req.body);
+    res.send("Welcome to home");
+})
 
 app.listen(port, () => {
     console.log(`Onwards and upwards from ${port}`);
